@@ -1,0 +1,183 @@
+<!-- <ul>
+    <li><a href="#/pagina1">pagina1</a></li>
+</ul>
+<router-outlet [routes]="Routes.all"></router-outlet>
+ -->
+
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/favicons/favicon.ico">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Meia-entrada.org.br">
+    <meta name="application-name" content="Meia-entrada.org.br">
+    <meta name="theme-color" content="#487c99">
+    <meta name="description"
+        content="Uma forma descomplicada de verificar a validade da Carteira de Identificação Estudantil (CIE), evitar fraudes e comprovar o cumprimento integral da Lei da Meia-entrada.">
+    <title>Meia-entrada estudantil</title>
+    <link href="css.css" rel="stylesheet">
+</head>
+
+<body data-new-gr-c-s-check-loaded="14.1086.0" data-gr-ext-installed=""><noscript>You need to enable JavaScript to run
+        this app.</noscript>
+    <div id="root">
+        <div class="App">
+            <header>
+                <nav class="navbar navbar-expand-xl navbar-dark fixed-top mainNavbar py-0">
+                    <div class="container"><a class="navbar-brand logo-link py-0" aria-current="false" aria-label="Logo"
+                            href="/"><img
+                                src="https://assets.meiaentrada.org.br/static/media/logo-meia-entrada.1880ce37.svg"
+                                height="80" class="d-inline-block align-top" alt="Logo"></a><button
+                            class="navbar-toggler " type="button" data-toggle="collapse"
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation"><span
+                                class="navbar-toggler-icon"></span></button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" aria-current="false"
+                                        id="navbarDropdownLei" title="O que diz a lei" data-toggle="dropdown"
+                                        aria-haspopup="true" aria-expanded="false" href="/lei">Lei da Meia-entrada</a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdownLei"><a
+                                            class="dropdown-item" aria-current="false" href="/lei">A Lei</a><a
+                                            class="dropdown-item" aria-current="false" href="/lei/padraonacional">Padrão
+                                            Nacional</a><a class="dropdown-item" aria-current="false"
+                                            href="/lei/comocomunicar">Como Funciona</a></div>
+                                </li>
+                                <li class="nav-item dropdown"><a class="nav-link dropdown-toggle active"
+                                        aria-current="true" id="navbarDropdownValidacao"
+                                        title="Valide a Carteira de Identificação Estudantil (CIE)"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                                        href="/validador">Validação</a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdownValidacao"><a
+                                            class="dropdown-item" aria-current="false"
+                                            href="/validador/itens-de-seguranca">Itens de segurança</a><a
+                                            class="dropdown-item" aria-current="false"
+                                            href="/validador/integracao">Integração</a></div>
+                                </li>
+                                <li class="nav-item"><a class="nav-link" aria-current="false" title="Validador oficial"
+                                        href="/chaves-publicas">Chaves públicas</a></li>
+                                <li class="nav-item"><a class="nav-link" aria-current="false"
+                                        title="Perguntas e respostas" href="/perguntas-e-respostas">FAQ</a></li>
+                                <li class="nav-item"><a class="nav-link" aria-current="false" title="Notícias"
+                                        href="/noticias">Notícias</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <div class="page-content">
+                <div>
+                    <section class="py-5">
+                        <div class="meiaentrada-title mb-5">
+                            <div class="container">
+                                <div class="meiaentrada-title-border-hide">
+                                    <h1>Validação de CIE <span class="small">(Carteira de Identificação
+                                            Estudantil)</span></h1>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div>
+                                <div class="alert alert-success text-center" role="alert">
+                                    <h4 class="alert-heading my-3">Documento válido!</h4>
+                                </div>
+                                <div>
+                                    <div>
+                                        <p class="text-center">ANPG atesta que Leonardo Calheiros Oliveira é estudante e
+                                            está regularmente matriculado(a) em Sistemas de Informação da
+                                            instituição FeMASS - Faculdade Professor Miguel Angelo da Sil</p>
+                                    </div>
+                                    <div class="row mb-5">
+                                        <div class="col-lg-10 col-md-8">
+                                            <div class="row border border-left-0 border-right-0 py-2">
+                                                <div class="col-md-3 text-md-right"><b>Nome:</b></div>
+                                                <div class="col-md-9">Leonardo Calheiros Oliveira</div>
+                                            </div>
+                                            <div class="row border border-left-0 border-right-0 border-top-0 py-2">
+                                                <div class="col-md-3 text-md-right"><b>Instituição:</b></div>
+                                                <div class="col-md-9">Faculdade Professor Miguel Angelo da Sil</div>
+                                            </div>
+                                            <div class="row border border-left-0 border-right-0 border-top-0 py-2">
+                                                <div class="col-md-3 text-md-right"><b>Curso:</b></div>
+                                                <div class="col-md-9">Sistemas de Informacao</div>
+                                            </div>
+                                            <div class="row border border-left-0 border-right-0 py-2">
+                                                <div class="col-md-3 text-md-right"><b>Documento de Identificação:</b>
+                                                </div>
+                                                <div class="col-md-9">000000131321820</div>
+                                            </div>
+                                            <div class="row border border-left-0 border-right-0 border-top-0 py-2">
+                                                <div class="col-md-3 text-md-right"><b>Emissor:</b></div>
+                                                <div class="col-md-9">ANPG</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-4 mx-auto col-lg-2 col-md-4"><img class="rounded"
+                                                src="foto.png"
+                                                alt="Leonardo Calheiros Oliveira"></div>
+                                    </div>
+                                    <h5>Certificado de Atributo em formato PEM:</h5>
+                                    <div class="certificate-container">
+                                        <p class="text-center">-----BEGIN CERTIFICATE-----</p><span
+                                            class="certificate">GMID3jCCAsYCAQEwgYOggYAwe6R5MHcxCzAJBgNVBAYTAkJSMRMwEQYDVQQKDApJQ1AtQnJhc2lsMS4wLAYDVQQLDCVBU1NPQ0lBQ0FPIE5BQ0lPTkFMIERFIFBPUyBHUkFEVUFORE9TMSMwIQYDVQQDDBpUaGFsaXRhIE1vcmVpcmEgZGUgQ2hyaXN0bwIBAaCBuzCBuKSBtTCBsjELMAkGA1UEBhMCQlIxEzARBgNVBAoMCklDUC1CcmFzaWwxFzAVBgNVBAsMDjE0MTIxOTU3MDAwMTA5MQ4wDAYDVQQLDAVWQUxJRDEbMBkGA1UECwwSUGVzc29hIEp1cmlkaWNhIEEzMRgwFgYDVQQLDA9BQyBWQUxJRCBCUkFTSUwxLjAsBgNVBAMMJUFTU09DSUFDQU8gTkFDSU9OQUwgREUgUE9TIEdSQURVQU5ET1MwDQYJKoZIhvcNAQEFBQACBACSn7kwIhgPMjAyMjEwMTExMTEzMjFaGA8yMDIzMDMzMTIzNTk1OVowgc0wRgYFYEwBCgExPRM7MTQwNzE5ODEwOTI5ODIwNDc5NTAwMDAwMDAwMDAwMDAwMDAwMDAwMDEyNjYxMTgwNSAgICAgICAgICAwdgYFYEwBCgIxbRNrQ2VudHJvIGRlIEVuc2lubyBTdXBlcmlvciBFc3RhY2lvIGRlIFNhIFBPU19HUkFEVUFDQU9fTFBvcy1ncmFkdWFjYW8gZW0gRGVzZW52b2x2aW1lblJpbyBkYXMgT3N0cmFzICAgICAgUkowCwYFYEwBBAMxAhMAMHQwMAYDVR0fBCkwJ6ElhiNodHRwczovL2FucGcuZG5lLnZjL3YxL2NybC9hbnBnLmNybDAdBgNVHSMEFoAUp6WdTBVheb8yYheJBppCYUqN1dwwIQYIKwYBBQUHAQEEFTATBggrBgEFBQcwAgQHhgVIVFRQUzANBgkqhkiG9w0BAQUFAAOCAQEAbYzMuOaGYzoNYKUtGQ+Jvw3WYuW05A9cRHanzz+wZHjjEfCxz7iYSgF+r9bBvMi2vi77dZrPNLf6vT+BOu1fAkda4WICT3v+/XGNz0bMO6vqtx8KwA8eD0J/5xb0xLiMKcJEz+xABIDzYRWo+Uo23Xq6QyyniWXehcyt+ZtBIk3miPn1gU+5t5SHFFmHF7sjDqj0Q+RAKfFTVDS2JEo4T3QYQspsgQlz6uF6iMZmskfx94CxTcYl5R7u1Kj6V2Wuqk17xUrJvFVd5bHtdQ4H1LbM8INDkWUCQrMULd0IxM0tGh0AMPTydGQFiMQz0l5GJOPrdFP/Dtr7Zigd8OEyRA==</span><br><br>
+                                        <p class="text-center">-----END CERTIFICATE-----</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="global-alert">
+                    <div class="alert-center mx-auto ">
+                        <div class="alert global-alert-success text-center alert-success alert-dismissible d-none"
+                            role="alert"></div>
+                        <div class="alert global-alert-danger text-center alert-danger alert-dismissible  d-none"
+                            role="alert"></div>
+                        <div class="alert global-alert-warning text-center alert-warning alert-dismissible d-none"
+                            role="alert"></div>
+                    </div>
+                </div>
+            </div>
+            <footer class="pt-4 main-footer pb-3">
+                <div class="container">
+                    <h2 class="text-white font-title text-center mt-2 mb-4">meiaentrada.org.br</h2>
+                    <nav class="row">
+                        <div class="col-sm-6 col-md-3">
+                            <ul class="py-0 my-0">
+                                <li class="py-1"><a title="Home" href="/">Home</a></li>
+                                <li class="py-1"><a title="O que diz a lei" href="/lei">Lei da Meia-entrada</a></li>
+                                <li class="py-1"><a title="Validador oficial da CIE" href="/chaves-publicas">Chaves
+                                        públicas</a></li>
+                                <li class="py-1"><a title="Perguntas e Respostas" href="/perguntas-e-respostas">FAQ</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-6 col-md-3">
+                            <ul class="py-0 my-0">
+                                <li class="py-1"><a title="Notícias" href="/noticias">Notícias</a></li>
+                                <li class="py-1"><a title="Termos de uso" href="/termos">Termos de Uso e Política de
+                                        Privacidade</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <div class="text-center mt-4"><span>@Meiaentrada.org.br - Todos os Direitos Reservados 2022</span>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <link href="https://fonts.googleapis.com/css?family=Rubik:500" rel="stylesheet">
+    <!-- <script async="" src="https://www.google-analytics.com/analytics.js"></script> -->
+    <!-- <script>window.recaptchaOptions = { lang: "pt-br" }</script> -->
+    <!-- <script type="text/javascript" src="/static/js/main.d781fbc4.js"></script> -->
+</body>
+<grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration>
+
+</html>
